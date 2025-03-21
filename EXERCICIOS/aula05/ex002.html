@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição 2.0</p>
+    <script>
+        /*var nome = window.prompt('Qual é o seu nome?')
+        window.alert('É um prazer te conhecer, ' + nome + '!')
+        window.prompt('Como você está?' + nome)*/
+
+        var n1 = Number(window.prompt('Digite um número de 1 a 10')) // Apesar da propriedade do var ser um "number", o prompt envia o número como se fosse uma "string" por isso é preciso converter a string para um número utilizando o "Number.parseInt"
+        var n2 = Number(window.prompt('Agora digite outro número de 1 a 10'))
+        var n3 = n1 + n2
+        window.alert('A soma dos seus números é de ' + n3) // O "+" é uma concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação
+        window.alert(`Eu estou aprendendo a usar template string, veja a soma de ${n1} e ${n2}: ${n3}`) //As aspas em que o texto fica dentro muda conforme o estilo de uso. Exemplo: `` '' ""
+    </script>
+</body>
+</html>

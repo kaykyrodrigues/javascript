@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando string e numbers</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</br> `) // O "length" diz quantos caracteres tem a string, o "document.write" escreve na página. As tags HTML funcionam dentro dos scripts, o "strong" é um exemplo. As tags precisam ser adicionadas dentro das aspas.
+        document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()} </br>`)
+        document.write(`Seu nome em letras minúsculas é ${nome.toLowerCase()}</br>`)
+
+        var n1 = Number(window.prompt('Qual é o seu salário?'))
+        document.write(`O seu salário é ${n1.toFixed(2).replace('.', ',')}`) //
+    </script>
+</body>
+</html>
