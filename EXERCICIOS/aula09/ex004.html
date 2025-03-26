@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>O <strong>JavaScript</strong> é muito interessante</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+        <div id="msg"><strong>Clique em mim</strong></div><br>
+    <script>
+        /*var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Esse é o resultado do seletor: ' + p1.innerHTML + '<br>')
+
+        window.alert(p1.innerTEXT)*/
+
+        var p1 = window.document.querySelectorAll('p')[1]
+        window.document.write('Esse é o resultado do seletor: ' + p1.innerHTML + '<br>')
+
+        var corpo = window.document.body
+        corpo.style.background = 'purple'
+        corpo.style.color = 'white'
+
+        /*var d = window.document.getElementById('msg')
+        window.document.write('Aqui está o seu ID: ' + msg.innerHTML)
+
+        d.style.background = 'green'
+        d.innerText = 'Oi.'
+        
+        Essas duas ultimas configurações facilitam a escrever o comando, como se fossem caminhos. É possivel mudar o conteúdo do próprio id selecionado */
+
+        var d = window.document.querySelector('div#msg')
+
+        d.style.background = 'green'
+        d.innerText ='Testando...'
+    </script>
+</body>
+</html>
